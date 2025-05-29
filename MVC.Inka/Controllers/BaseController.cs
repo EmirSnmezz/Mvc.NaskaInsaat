@@ -6,17 +6,18 @@ using System.Globalization;
 public class BaseController : Controller
 {
     private readonly LocalizationService _localizer;
-
-    public BaseController(LocalizationService localizer)
+    private readonly string _language;
+    public BaseController(LocalizationService localizer, string language)
     {
         _localizer = localizer;
+        _language = language;
     }
 
     public override void OnActionExecuting(ActionExecutingContext context)
     {
         ViewBag.T = new Func<string, string>(key =>
         {
-            var culture = CultureInfo.CurrentUICulture.TwoLetterISOLanguageName;
+            var culture = _language;
             return _localizer.Translate(key, culture);
         });
 

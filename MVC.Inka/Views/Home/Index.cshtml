@@ -6,7 +6,10 @@
 	<section id="content">
 		<article id="home" class="active">
 			<div class="social-side">
-				<div class="icon-side"><a href=@Url.ActionLink("Index", "Home")>TR </a>-<a href=@Url.ActionLink("Index", "Home")> EN</a></div>
+				<div class="icon-side">
+					<a href=@Url.ActionLink("ChangeLanguage", "Home", values: new{language = "tr"})>TR </a>
+					-
+					<a href=@Url.ActionLink("ChangeLanguage", "Home", values: new{language = "en"})> EN</a></div>
 			</div>
 			<div class="small-text1">
 				<div class="cl-effect-5">

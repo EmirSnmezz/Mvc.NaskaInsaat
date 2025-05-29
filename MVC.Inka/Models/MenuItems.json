@@ -1,9 +1,13 @@
 {
     "tr": {
         "Home": "Anasayfa",
-        "About": "Hakkýmýzda",
+        "About": "Hakkï¿½mï¿½zda",
         "Referances": "Referanslar",
         "Projects": "Projelerimiz",
-        "Contact": "Ýletiþim"
+        "Contact": "ï¿½letiï¿½im"
+    },
+
+    "en": {
+
     }
 }
